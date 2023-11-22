@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.house-slider_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.house-slider_main {
+    width: 573px;
+    height: 410px;
+    margin-bottom: 40px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.house-slider_main img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.house-slider_carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.house-slider_arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.house-slider_wrapper {
+    width: 409px;
+}
+
+.house-slider_images {
+    display: flex;
+    overflow: hidden;
+}
+
+.house-slider_images div {
+    width: 130px;
+    height: 80px;
+    margin-left: 12px;
+}
+
+.house-slider_images div img{
+    height: 100%;
+}
+
+.house-slider_images div img::selection {
+    background: none; 
+}
+
+.house-slider_images div img::-moz-selection {
+    background: none;
+}
+
+.house-slider_images div:first-child {
+    margin-left: 0;;
+}
+
+.house-slider_images .chosed {
+    border: 3px solid #25B;
+}
